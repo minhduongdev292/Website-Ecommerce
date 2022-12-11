@@ -6,7 +6,7 @@ const categoryRoute = express.Router();
 //CREATE CATEGORY
 categoryRoute.post(
     "/category/create",
-    asyncHandler(async (req, res) => {
+    asyncHandler(async (req, res, next) => {
         try {
             const category = await Category.create(req.body);
             res.status(201).json({
@@ -23,7 +23,7 @@ categoryRoute.post(
 //GET ALL CATEGORIES
 categoryRoute.get(
     "/category/all",
-    asyncHandler(async (req, res) => {
+    asyncHandler(async (req, res, next) => {
         try {
             const category = await Category.find();
             res.status(201).json({

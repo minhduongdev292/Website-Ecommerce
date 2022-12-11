@@ -74,6 +74,9 @@ const ShopSection = (props) => {
               
               <div className="button-category">
                 <button type="button" class="btn btn-outline-info">
+                   <Link to={`/products`}>Sản phẩm</Link>
+                </button>
+                <button type="button" class="btn btn-outline-info">
                   <img id="img" alt="" src="/images/44.png" />
                 </button>
                 <button type="button" class="btn btn-outline-info">

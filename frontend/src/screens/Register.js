@@ -40,9 +40,10 @@ const Register = ({ location, history }) => {
           className="Login col-md-8 col-lg-4 col-11"
           onSubmit={submitHandler}
         >
+          <h5>Chào mừng bạn đến với Sugar Store!</h5>
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Tên tài khoản"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -54,7 +55,7 @@ const Register = ({ location, history }) => {
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Mật khẩu"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />

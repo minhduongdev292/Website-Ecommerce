@@ -91,7 +91,7 @@ const Footer = () => {
             <div className="card-name">
                 <img
                     alt="paypal"
-                    src="https://pbs.twimg.com/media/EfTZlEnWAAMn1lX.png"
+                    src="https://kieutruong.com/wp-content/uploads/2019/11/huong-dan-dang-ky-tai-khoan-paypal-1024x512.jpg"
                 />
             </div>
             <div className="card-name">

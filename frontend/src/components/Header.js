@@ -143,7 +143,7 @@ const Header = () => {
             <div className="row">
               <div className="col-md-3 col-4 d-flex align-items-center">
                 <Link className="navbar-brand" to="/">
-                  <img alt="logo" src="/images/31.png" />
+                  <img alt="logo" src="/images/55.png" />
                 </Link>
               </div>
               <div className="col-md-6 col-8 d-flex align-items-center">
@@ -151,7 +151,7 @@ const Header = () => {
                   <input
                     type="search"
                     className="form-control rounded search"
-                    placeholder="Tìm kiếm..."
+                    placeholder="Nhập từ khóa cần tìm..."
                     onChange={(e) => setKeyword(e.target.value)}
                   />
                   <button type="submit" className="search-button">

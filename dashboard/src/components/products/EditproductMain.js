@@ -26,6 +26,7 @@ const EditProductMain = (props) => {
   const [image, setImage] = useState("");
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState("");
+  const [category, setCategory] = useState("");
 
   const dispatch = useDispatch();
 
@@ -52,6 +53,7 @@ const EditProductMain = (props) => {
         setCountInStock(product.countInStock);
         setImage(product.image);
         setPrice(product.price);
+        setCategory(product.category);
       }
     }
   }, [product, dispatch, productId, successUpdate]);
@@ -66,6 +68,7 @@ const EditProductMain = (props) => {
         description,
         image,
         countInStock,
+        category,
       })
     );
   };
@@ -153,6 +156,20 @@ const EditProductMain = (props) => {
                           value={description}
                           onChange={(e) => setDescription(e.target.value)}
                         ></textarea>
+                      </div>
+                      <div className="mb-4">
+                        <label htmlFor="product_title" className="form-label">
+                          Thể loại
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="Nhập ở đây..."
+                          className="form-control"
+                          id="product_category"
+                          required
+                          value={category}
+                          onChange={(e) => setCategory(e.target.value)}
+                        />
                       </div>
                       <div className="mb-4">
                         <label className="form-label">Hình ảnh</label>

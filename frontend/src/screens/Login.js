@@ -38,6 +38,7 @@ const Login = ({ location, history }) => {
           className="Login col-md-8 col-lg-4 col-11"
           onSubmit={submitHandler}
         >
+          <h5>Chào mừng bạn đến với Sugar Store!</h5>
           <input
             type="email"
             placeholder="Email"
@@ -46,7 +47,7 @@ const Login = ({ location, history }) => {
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Mật khẩu"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />

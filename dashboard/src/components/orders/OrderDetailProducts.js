@@ -75,7 +75,8 @@ const OrderDetailProducts = (props) => {
                     <span className="badge rounded-pill alert alert-danger text-danger">
                       Chưa thanh toán
                     </span>
-                  )}
+                  ) 
+                  }
                 </dd>
               </dl>
             </article>

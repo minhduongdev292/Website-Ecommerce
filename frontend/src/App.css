@@ -40,7 +40,7 @@ textarea:focus {
   padding: 0;
 }
 .Announcement {
-  background-color: #1cb803;
+  background-color: blue;
   padding: 10px 0px 6px 0px;
 }
 .Announcement .col-md-6 p {
@@ -283,6 +283,9 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.contact-Box {
+  padding: 0 15px 30px;
 }
 .box-info {
   width: 80%;

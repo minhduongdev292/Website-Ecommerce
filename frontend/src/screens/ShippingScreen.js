@@ -32,28 +32,28 @@ const ShippingScreen = ({ history }) => {
           <h6>ĐỊA CHỈ GIAO HÀNG</h6>
           <input
             type="text"
-            placeholder="Enter address"
+            placeholder="Nhập vào địa chỉ"
             value={address}
             required
             onChange={(e) => setAddress(e.target.value)}
           />
           <input
             type="text"
-            placeholder="Enter city"
+            placeholder="Nhập vào thành phố"
             value={city}
             required
             onChange={(e) => setCity(e.target.value)}
           />
           <input
             type="text"
-            placeholder="Enter postal code"
+            placeholder="Nhập mã bưu chính"
             value={postalCode}
             required
             onChange={(e) => setPostalCode(e.target.value)}
           />
           <input
             type="text"
-            placeholder="Enter country"
+            placeholder="Nhập quốc gia"
             value={country}
             required
             onChange={(e) => setCountry(e.target.value)}

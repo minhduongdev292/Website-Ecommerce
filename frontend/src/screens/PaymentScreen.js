@@ -41,6 +41,13 @@ const PaymentScreen = ({ history }) => {
               />
               <label className="form-check-label">PayPal or Credit Card</label>
             </div>
+            <div className="radio-container">
+              <input
+                className="form-check-input"
+                type="radio"
+              />
+              <label className="form-check-label">Thanh toán khi nhận hàng</label>
+            </div>
           </div>
 
           <button type="submit">TIẾP TỤC</button>

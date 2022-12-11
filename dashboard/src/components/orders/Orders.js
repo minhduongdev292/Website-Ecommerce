@@ -36,7 +36,8 @@ const Orders = (props) => {
                 <span className="badge rounded-pill alert-danger">
                   Chưa thanh toán
                 </span>
-              )}
+              )
+              }
             </td>
             <td>{moment(order.createdAt).format("MMM Do YY")}</td>
             <td>

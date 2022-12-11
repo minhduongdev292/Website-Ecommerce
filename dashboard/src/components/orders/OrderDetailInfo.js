@@ -38,7 +38,7 @@ const OrderDetailInfo = (props) => {
             <i className="text-success fas fa-map-marker-alt"></i>
           </span>
           <div className="text">
-            <h6 className="mb-1">Giao cho</h6>
+            <h6 className="mb-1">Giao tại</h6>
             <p className="mb-1">
               Địa chỉ: {order.shippingAddress.city}
               <br />

@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const {ObjectId} = mongoose.Schema;
+//const {ObjectId} = mongoose.Schema;
 
 const reviewSchema = mongoose.Schema(
   {
@@ -23,9 +23,9 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    // category: { 
-    //   type: ObjectId, required: true,
-    // },
+    category: { 
+      type: String, required: true,
+    },
     image: {
       type: String,
     },

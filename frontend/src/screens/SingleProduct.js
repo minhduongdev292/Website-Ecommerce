@@ -94,6 +94,7 @@ const SingleProduct = ({ history, match }) => {
                     <p>{product.description}</p>
                     <div class="single-commit">
                       <h5>Bạn sẽ nhận được:</h5>
+                      <li>Thẻ thành viên Sugar Store.</li>
                       <li>Gói vệ sinh laptop miễn phí 3 lần.</li>
                       <li>Chuột logitech G304 phiên bản limited.</li>
                       <li>Mã giảm giá 200k khi mua màn hình từ 23inch trở lên.</li>
@@ -104,6 +105,10 @@ const SingleProduct = ({ history, match }) => {
                         <div className="flex-box d-flex justify-content-between align-items-center">
                             <h6>Giá bán</h6>
                             <span>${product.price}</span>
+                        </div>
+                        <div className="flex-box d-flex justify-content-between align-items-center">
+                            <h6>Thể loại</h6>
+                            <span>{product.category}</span>
                         </div>
                         <div className="flex-box d-flex justify-content-between align-items-center">
                         <h6>Trạng thái</h6>

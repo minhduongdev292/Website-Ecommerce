@@ -20,6 +20,7 @@ const AddProductMain = () => {
   const [image, setImage] = useState("");
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState("");
+  const [category, setCategory] = useState("");
 
   const dispatch = useDispatch();
 
@@ -35,13 +36,14 @@ const AddProductMain = () => {
       setCountInStock(0);
       setImage("");
       setPrice(0);
+      setCategory("");
     }
   }, [product, dispatch]);
 
   const submitHandler = (e) => {
-    console.log(name, price, description, image, countInStock);
+    console.log(name, price, description, image, countInStock, category);
     e.preventDefault();
-    dispatch(createProduct(name, price, description, image, countInStock));
+    dispatch(createProduct(name, price, description, image, countInStock, category));
   };
 
   return (
@@ -119,6 +121,20 @@ const AddProductMain = () => {
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
                     ></textarea>
+                  </div>
+                  <div className="mb-4">
+                    <label htmlFor="product_title" className="form-label">
+                      Thể loại
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Nhập ở đây..."
+                      className="form-control"
+                      id="product_category"
+                      required
+                      value={category}
+                      onChange={(e) => setCategory(e.target.value)}
+                    />
                   </div>
                   <div className="mb-4">
                     <label className="form-label">Hình ảnh</label>
